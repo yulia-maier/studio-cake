@@ -1,0 +1,138 @@
+.shop {
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 177px;
+  }
+
+  &__title-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 861px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-family: 'Felidae', sans-serif;
+    font-size: 64px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: $accent__yellow;
+
+    &:first-of-type {
+      align-self: start;
+    }
+
+    &:last-of-type {
+      align-self: end;
+    }
+  }
+
+  &__title-decor {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-family: 'Amalfi Coast', sans-serif;
+    font-size: 24px;
+    line-height: 140%;
+    color: $decor__white;
+    opacity: 0.7;
+  }
+
+  &__description {
+    max-width: 264px;
+    font-family: 'Lato-Light', sans-serif;
+    font-size: 14px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: $basic__white;
+    margin: 83px auto 60px auto;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 285px);
+    justify-content: center;
+    row-gap: 40px;
+    column-gap: 20px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 285px;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+  }
+
+  &__card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__card-title {
+    font-family: 'Lato-Medium', sans-serif;
+    font-size: 16px;
+    line-height: 120%;
+    color: $basic__white;
+    min-height: 38px;
+  }
+
+  &__card-quantity {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 140%;
+    color: $details__white;
+  }
+
+  &__card-price {
+    font-family: 'Lato-Bold', sans-serif;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: $accent__yellow;
+  }
+
+  &__card-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__card-button {
+    width: 151px;
+    background: $main__red;
+    color: $basic__white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    border-radius: 50px;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    line-height: 140%;
+    text-transform: uppercase;
+
+    &:hover {
+      background: $hover__red;
+    }
+  }
+}
+  //---Desktop 1200px---
+  @media (max-width: $bp-desktop) {
+    .shop {
+
+      &__list {
+        grid-template-columns: repeat(3, 285px);
+        row-gap: 56px;
+        column-gap: 40px;
+      }
+    }
+  }
+  //---Laptop 1024px---
+  //---Tablet 768px---
+  //---Mobile 360px---

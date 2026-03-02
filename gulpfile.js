@@ -35,7 +35,7 @@ const paths = {
         dest: `${buildFolder}/fonts/`,
     },
     images: {
-        src: `${srcFolder}/images/**/*.{jpg,jpeg,png,svg,gif,webp}`,
+        src: `${srcFolder}/images/**/*.{png,jpg,jpeg,svg,gif,webp}`,
         dest: `${buildFolder}/images/`,
     },
 };
@@ -78,7 +78,7 @@ function fonts() {
 }
 
 function images() {
-    return gulp.src(paths.images.src)
+    return gulp.src(paths.images.src, {encoding: false})
         .pipe(gulp.dest(paths.images.dest))
         .pipe(browserSync.stream());
 }

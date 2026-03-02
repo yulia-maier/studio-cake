@@ -1,0 +1,42 @@
+.footer {
+  border-top: 1px solid rgba(255, 251, 251, 0.22);
+
+  &__container {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 0;
+  }
+
+  &__title-decor {
+    font-family: "Amalfi Coast", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 140%;
+    color: $decor__white;
+  }
+
+  &__rights {
+    font-family: 'Lato-Medium', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    color: $basic__white;
+  }
+}
+  //---Desktop 1200px---
+@media (max-width: $bp-desktop) {
+  .footer {
+    &__container {
+      padding: 35px 20px;
+    }
+  }
+}
+
+
+  //---Laptop 1024px---
+
+  //---Tablet 768px---
+  //---Mobile 360px---
